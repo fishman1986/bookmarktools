@@ -1,5 +1,10 @@
 # bookmarktools
-Provide a few tools which are small enough to just in a bookmark
+Provide a few tools which is small enough to just in a bookmark
 
 ## How to use?
-Pickup a unlucky bookmark in your browser, edit it, copy the content from *.min.js, that's all 
+Pick up a unlucky bookmark in your browser, edit it, copy the content from *.min.js, that's all.
+### Or
+Drag the following link to the bookmark
+[Alarm]("javascript:(function(c){var b=$("<div style='position:absolute;z-index:10000;border: solid 2px #98d4c3;border-radius: 5px;box-shadow: 2px 2px 20px 6px #8dcad0;background: #fdfffd;top: 50px;left:50px;padding: 20px;'><br/></div>").appendTo("body"),d=$("<input id='alarm-timer' style='width:360px'>").attr("placeholder",new Date()).prependTo(a).keyup(function(f){if(f.keyCode===13){c.countDown()}});$.each([5,10,15,30],function(){b.append("<a style='display:inline-block;margin:10px 20px;' href='javascript:setTime("+this+")'>"+this+" mins</a>")});c.setTime=function(e){d.val(e*60);c.countDown()};c.countDown=function(){c.alTimer=c.setTimeout(function(){if(d.val()==0){$('<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">').appendTo($("head"));b.append($('<br/><iframe style="width:360px;height:640px;border:none" src="http://m.kuwo.cn/?mid=MUSIC_4842407"></iframe>'));c.clearTimeout(c.alTimer);b.click(function(){b.remove()})}else{d.val(d.val()-1);c.countDown()}},1000)}})(window);
+")
+[QRCode]("javascript:(function(f,h){var e="1.Copy the content<br/>2.Click on the QR bookmark<br/>3.Press Ctrl+V<br/><br/> Or select content and then click on the QR bookmark",b=f.getSelection()||h.selection.createRange().text;var c=h.createElement("div");c.style.cssText="border:solid 2px #888;background-color:#eee;padding:8px;position:fixed;left:300px;top:100px;z-index:9999";c.innerHTML=e;h.body.appendChild(c);var g=function(){c.innerHTML="I'm loading madly...";var d=new Image();d.src="http://qr.liantu.com/api.php?text="+encodeURIComponent(b)+"&a="+Math.random();d.onload=function(){c.innerHTML="";c.appendChild(d)}};if(b==""){if(f.clipboardData){b=f.clipboardData.getData("text")}else{h.onpaste=function(d){b=d.clipboardData.getData("text/plain");g()}}if(b!=""){g()}}else{g()}var a=h.onclick;h.onclick=function(){h.body.removeChild(c);h.onclick=a;h.onpaste=null}})(window,document);")
